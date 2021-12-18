@@ -20,7 +20,7 @@ jobs:
     - name: Ngrok Hesabınıza Bağlanılıyor
       run: .\ngrok.exe authtoken $Env:NGROK
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK }}
+        NGROK_AUTH_TOKEN: "22Sr3ElWLESThZcM0ETzQn1q2xU_7L447pktSEH74oBWTFAP1"
     - name: Önemli Dosyalar İndiriliyor
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/ntrdnm1/gettovds/main/Files/NGROK-US.bat -OutFile NGROK-US.bat
